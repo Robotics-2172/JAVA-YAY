@@ -5,22 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/addfriend"
-        android:layout_width="212dp"
-        android:layout_height="42dp"
-        android:text="Add Friend"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
-
     <EditText
         android:id="@+id/name"
-        android:layout_width="141dp"
-        android:layout_height="38dp"
+        android:layout_width="174dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
@@ -31,25 +19,50 @@
         app:layout_constraintTop_toTopOf="@+id/scrollview"
         app:layout_constraintVertical_bias="0.981" />
 
+    <Button
+        android:id="@+id/addfriend"
+        android:layout_width="98dp"
+        android:layout_height="68dp"
+        android:text="Add Friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="32dp"
-        android:paddingBottom="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/addfriend"
+        android:layout_marginBottom="120dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="0dp"
 
+        app:layout_constraintBottom_toTopOf="@+id/addfriend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1">
 
         <LinearLayout
             android:id="@+id/linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

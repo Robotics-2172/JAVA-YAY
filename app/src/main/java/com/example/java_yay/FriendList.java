@@ -3,6 +3,7 @@ package com.example.java_yay;
 import android.app.Activity;
 import android.content.ContextParams;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -33,6 +34,20 @@ public class FriendList extends Activity {
                                 panel.addView(b);
                             });
                 }
+                CompletableFuture.runAsync(() -> {
+                    Button b = new Button(this);
+                    b.setText("");
+                    b.setBackgroundColor(Color.TRANSPARENT);
+                    b.setTranslationY((1+ l.size()) * 20);
+                    panel.addView(b);
+                });
+                CompletableFuture.runAsync(()->{
+                    Button b = new Button(this);
+                    b.setText("");
+                    b.setBackgroundColor(Color.TRANSPARENT);
+                    b.setTranslationY((1+ l.size()) * 20);
+                    panel.addView(b);
+                });
             });
         findViewById(R.id.addfriend).setOnClickListener(v -> {
             Friend fr = new Friend();
@@ -45,6 +60,13 @@ public class FriendList extends Activity {
                 runOnUiThread(() -> {
                     Toast.makeText(this, "Added!" + fr.name, Toast.LENGTH_SHORT).show();
                 });
+            });
+        });
+        findViewById(R.id.clear).setOnClickListener(v -> {
+            CompletableFuture.runAsync(() -> {
+                for (Friend f : db.friendDao().getAll()) {
+                    db.friendDao().delete(f);
+                }
             });
         });
     }
