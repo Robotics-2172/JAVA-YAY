@@ -11,8 +11,8 @@ public class mainActivity extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.mainactivity);
         findViewById(R.id.button).setOnClickListener(v->{
-            Toast.makeText(mainActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(mainActivity.this, test.class);
+            Toast.makeText(this, "Hello World", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, test.class);
             startActivity(intent);
         });
     }

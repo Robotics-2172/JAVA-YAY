@@ -11,8 +11,8 @@ public class test extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.test);
         findViewById(R.id.button3).setOnClickListener(v->{
-            Toast.makeText(test.this, "Go back!!!", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(test.this, mainActivity.class);
+            Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, mainActivity.class);
             startActivity(intent);
         });
     }
