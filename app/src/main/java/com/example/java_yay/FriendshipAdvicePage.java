@@ -22,13 +22,15 @@ public class FriendshipAdvicePage extends Activity {
         });
         findViewById(R.id.thingstoask).setOnClickListener(v -> {
             Intent intent = new Intent(this, ThingstoAsk.class);
-            startActivity(intent);
+            startActivityForResult(intent, 0);
         });
         findViewById(R.id.faHome).setOnClickListener(v -> {
             //Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
-            finish();
+            finishActivity(0);
         });
+
     }
+
 }
 
 

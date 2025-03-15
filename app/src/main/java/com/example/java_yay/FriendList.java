@@ -50,25 +50,25 @@ public class FriendList extends Activity {
                 });
             });
         findViewById(R.id.addfriend).setOnClickListener(v -> {
-            Friend fr = new Friend();
-            EditText b = findViewById(R.id.name);
-            fr.name = b.getText().toString();
-            fr.birthday = "12/12/12";
-            CompletableFuture.runAsync(() -> {
-                db.friendDao().insertAll(fr);
-            }).exceptionally(throwable -> null).thenRun(() -> {
-                runOnUiThread(() -> {
-                    Toast.makeText(this, "Added!" + fr.name, Toast.LENGTH_SHORT).show();
-                });
-            });
+            Intent intent = new Intent(this, AddFriend.class);
+            startActivityForResult(intent, 0);
         });
         findViewById(R.id.clear).setOnClickListener(v -> {
             CompletableFuture.runAsync(() -> {
                 for (Friend f : db.friendDao().getAll()) {
                     db.friendDao().delete(f);
                 }
+                runOnUiThread(this::recreate);
             });
         });
+        findViewById(R.id.homebuttonfriendlist).setOnClickListener(v -> {
+            finish();
+        });
+
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        runOnUiThread(this::recreate);
     }
 }
 //        findViewById(R.id.button).setOnClickListener(v -> {
