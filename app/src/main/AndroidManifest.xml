@@ -26,5 +26,6 @@
         </activity>
 
         <activity android:name=".test"/>
+        <activity android:name=".testagain"/>
     </application>
 </manifest>

@@ -12,7 +12,7 @@ public class test extends Activity {
         setContentView(R.layout.test);
         findViewById(R.id.button3).setOnClickListener(v->{
             Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, mainActivity.class);
+            Intent intent = new Intent(this, testagain.class);
             startActivity(intent);
         });
     }
