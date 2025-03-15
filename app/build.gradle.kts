@@ -38,11 +38,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("androidx.datastore:datastore-preferences:1.1.3")
-
-    // optional - RxJava2 support
-    implementation("androidx.datastore:datastore-preferences-rxjava2:1.1.3")
-
-    // optional - RxJava3 support
-    implementation("androidx.datastore:datastore-preferences-rxjava3:1.1.3")
+    implementation(libs.room.runtime)
+    annotationProcessor(libs.room.compiler)
 }
