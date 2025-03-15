@@ -14,7 +14,6 @@ public class FriendshipAdvicePage extends Activity {
         setContentView(R.layout.friendshipadvicepage);
         findViewById(R.id.faHome).setOnClickListener(v -> {
             //Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, HygienePage.class);
             finish();
         });
     }
