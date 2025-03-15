@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,7 +8,7 @@
 
     <Button
         android:background="@android:color/transparent"
-        android:id="@+id/friendshipadvice"
+        android:id="@+id/friendshipAdviceButton"
         android:layout_width="297dp"
         android:layout_height="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +18,7 @@
         app:layout_constraintVertical_bias="0.534" />
 
     <Button
-        android:id="@+id/hygiene"
+        android:id="@+id/hygieneButton"
         android:layout_width="297dp"
         android:layout_height="33dp"
         android:background="@android:color/transparent"
@@ -38,12 +37,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/friendshipadvice"
+        app:layout_constraintTop_toBottomOf="@+id/friendshipAdviceButton"
         app:layout_constraintVertical_bias="0.479" />
 
 
     <Button
-        android:id="@+id/friendslist"
+        android:id="@+id/friendsListButton"
         android:layout_width="291dp"
         android:layout_height="33dp"
         android:background="@android:color/transparent"
