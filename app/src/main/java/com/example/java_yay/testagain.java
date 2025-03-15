@@ -12,7 +12,7 @@ public class testagain extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.testagain);
         findViewById(R.id.button2).setOnClickListener(v ->{
-            Intent intent = new Intent(this, mainActivity.class);
+            setResult(0);
             finish();
       });
     }

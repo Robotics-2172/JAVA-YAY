@@ -13,7 +13,11 @@ public class test extends Activity {
         findViewById(R.id.button3).setOnClickListener(v->{
             Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, testagain.class);
-            startActivity(intent);
+            startActivityForResult(intent, 0);
         });
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        finish();
     }
 }
