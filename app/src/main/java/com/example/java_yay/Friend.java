@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Entity
 public class Friend {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int uid;
 
     public String name;

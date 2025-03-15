@@ -9,6 +9,7 @@ public class CraigApplication extends Application {
     public void onCreate(){
         super.onCreate();
         friendDB = Room.databaseBuilder(this, FriendDB.class, "friend-database").build();
+
     }
     public FriendDB getFriendDB(){
         return friendDB;
