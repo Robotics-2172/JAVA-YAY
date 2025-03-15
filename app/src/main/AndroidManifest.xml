@@ -29,5 +29,9 @@
         <activity android:name=".FriendshipAdvicePage"/>
         <activity android:name=".HygienePage"/>
         <activity android:name=".FriendList"/>
+        <activity android:name=".GettingtoKnow"/>
+        <activity android:name=".SocialNorms"/>
+        <activity android:name=".ThingstoAsk"/>
+
     </application>
 </manifest>

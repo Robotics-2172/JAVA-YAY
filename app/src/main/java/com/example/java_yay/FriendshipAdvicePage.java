@@ -12,6 +12,18 @@ public class FriendshipAdvicePage extends Activity {
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.friendshipadvicepage);
+        findViewById(R.id.gettingtoknow).setOnClickListener(v ->{
+           Intent intent = new Intent(this, GettingtoKnow.class);
+           startActivity(intent);
+        });
+        findViewById(R.id.socialnorms).setOnClickListener(v -> {
+            Intent intent = new Intent(this, SocialNorms.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.thingstoask).setOnClickListener(v -> {
+            Intent intent = new Intent(this, ThingstoAsk.class);
+            startActivity(intent);
+        });
         findViewById(R.id.faHome).setOnClickListener(v -> {
             //Toast.makeText(this, "Go back!!!", Toast.LENGTH_SHORT).show();
             finish();
