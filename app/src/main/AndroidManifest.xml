@@ -28,5 +28,6 @@
 
         <activity android:name=".FriendshipAdvicePage"/>
         <activity android:name=".HygienePage"/>
+        <activity android:name=".FriendList"/>
     </application>
 </manifest>
