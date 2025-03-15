@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-public class mainActivity extends Activity {
+public class test extends Activity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.mainactivity);
-        findViewById(R.id.button).setOnClickListener(v->{
-            Toast.makeText(mainActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(mainActivity.this, test.class);
+        setContentView(R.layout.test);
+        findViewById(R.id.button3).setOnClickListener(v->{
+            Toast.makeText(test.this, "Go back!!!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(test.this, mainActivity.class);
             startActivity(intent);
         });
     }
