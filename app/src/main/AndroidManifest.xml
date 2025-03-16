@@ -36,5 +36,9 @@
         <activity android:name=".ThingsToAskActivity" />
 
         <activity android:name=".AddFriendActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 </manifest>

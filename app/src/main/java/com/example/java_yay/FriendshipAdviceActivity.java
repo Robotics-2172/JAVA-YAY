@@ -2,7 +2,13 @@ package com.example.java_yay;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.core.content.res.ResourcesCompat;
+
+import org.w3c.dom.Text;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
@@ -17,7 +23,13 @@ public class FriendshipAdviceActivity extends Activity {
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.friendship_advice_layout);
+        setContentView(R.layout.friendship_advice_page);
+        TextView tx = findViewById(R.id.textView);
+
+        Typeface custom_font = ResourcesCompat.getFont(this, R.font.kay_pho_du);
+
+        tx.setTypeface(custom_font);
+
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         Toolbar toolbar = findViewById(R.id.toolbar);
