@@ -10,10 +10,10 @@ public class HomePageActivity extends Activity {
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.main_layout);
 
         startActivityWithButton(this, R.id.friendshipAdviceButton, FriendshipAdviceActivity.class);
         startActivityWithButton(this, R.id.friendsListButton, FriendListActivity.class);
-        startActivityWithButton(this, R.id.hygieneButton, HygienePage.class);
+        startActivityWithButton(this, R.id.hygieneButton, HygieneActivity.class);
     }
 }

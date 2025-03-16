@@ -9,6 +9,6 @@ public class GettingToKnowActivity extends Activity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.getting_to_know_layout);
 
-        findViewById(R.id.getting_to_know_back_button).setOnClickListener(v -> finish());
+        findViewById(R.id.gettingToKnowBackButton).setOnClickListener(v -> finish());
     }
 }

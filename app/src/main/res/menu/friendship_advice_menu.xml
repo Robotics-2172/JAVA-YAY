@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_getting_to_know_someone"
+        android:title="@string/getting_to_know_someone" />
+
+    <item
+        android:id="@+id/nav_things_to_ask"
+        android:title="@string/things_to_ask" />
+
+    <item
+        android:id="@+id/nav_social_norms"
+        android:title="@string/social_norms" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home" />
+</menu>

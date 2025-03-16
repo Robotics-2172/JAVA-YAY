@@ -15,9 +15,8 @@ public interface FriendDao {
     @Query("SELECT * FROM Friend WHERE uid IN (:userIds)")
     List<Friend> loadAllByIds(int[] userIds);
 
-    @Query("SELECT * FROM Friend WHERE name LIKE :name AND " +
-            "birthday LIKE :bday LIMIT 1")
-    Friend findByName(String name, String bday);
+    @Query("SELECT * FROM Friend WHERE name LIKE :name LIMIT 1")
+    Friend findByName(String name);
 
     @Insert
     void insertAll(Friend... friends);

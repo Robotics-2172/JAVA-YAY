@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">JAVA-YAY</string>
+    <string name="app_name">Craig\'s App</string>
     <string name="add_friend">Add Friend</string>
     <string name="clear">Clear</string>
     <string name="home">Home</string>
     <string name="birthday">Birthday</string>
     <string name="add">Add</string>
     <string name="name">Name</string>
+    <string name="back">Back</string>
+    <string name="description">Description</string>
+    <string name="birthday_list_text">Birthday: %1$s</string>
+    <string name="getting_to_know_someone">Getting to Know Someone</string>
+    <string name="things_to_ask">Things to Ask</string>
+    <string name="social_norms">Social Norms</string>
+    <string name="friendship_advice">Friendship Advice</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>

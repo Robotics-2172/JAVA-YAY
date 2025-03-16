@@ -25,7 +25,7 @@
 
         <activity android:name=".FriendshipAdviceActivity" />
 
-        <activity android:name=".HygienePage" />
+        <activity android:name=".HygieneActivity" />
 
         <activity android:name=".FriendListActivity" />
 

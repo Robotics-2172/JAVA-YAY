@@ -7,7 +7,7 @@ public class SocialNormsActivity extends Activity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.socialnorms);
+        setContentView(R.layout.social_norms_layout);
 
         findViewById(R.id.backnorms).setOnClickListener(v -> finish());
     }
